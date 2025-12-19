@@ -72,7 +72,7 @@ public static void main (String [] args ) {
     // Date/Time to String
     Date date1 = new Date("16/12/2015");
     String string1 = String.valueOf(date1);
-    System.out.println(string1);*/
+    System.out.println(string1);
 
     // String to Date/Time;
     String string1 = "29/05/2009";
@@ -80,9 +80,41 @@ public static void main (String [] args ) {
 
     // Parse the string into a LocalDate object
     LocalDate date = LocalDate.parse(string1, formatter);
-    System.out.println(date);
+    System.out.println(date);*/
 
+
+    // XOR
+    /*int a = 5;
+    int b = 3;
+    int result = a ^ b;
+    System.out.println(result); // Outputs 6
+
+    // Given an array where every number appears twice except for one, find the single number.
+    int[] nums = {1, 2, 1, 2,5};
+    int result = 0;
+    for (int i : nums) {
+        result ^= i; // XOR everything
     }
+        System.out.println(result);
+
+    final String colour = "red";
+    String colour1 = "pink";
+
+    // colour = colour1;
+
+
+    System.out.println(colour);
+    System.out.println(colour1);*/
+
+    // MATHSSSS :DDDD
+    Double decimal1 = 0.6;
+    System.out.println(Math.round(decimal1));
+}
+
+
+
+
+
 
 
 
