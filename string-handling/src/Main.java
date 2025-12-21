@@ -104,12 +104,69 @@ public static void main (String [] args ) {
 
 
     System.out.println(colour);
-    System.out.println(colour1);*/
+    System.out.println(colour1);
 
-    // MATHSSSS :DDDD
+    // MATHS :DDDD
     Double decimal1 = 0.6;
     System.out.println(Math.round(decimal1));
-}
+
+
+    // Take five inputs as numbers and find the highest
+
+    ArrayList<Integer> numbers = new ArrayList<>();
+    Scanner scanner = new Scanner(System.in);
+    for (int i = 0; i < 5; i++) {
+        System.out.println("Please enter a digit.");
+        int choice = scanner.nextInt();
+        numbers.add(choice);
+    }
+    int maxNumber =  Collections.max(numbers);
+    System.out.println(maxNumber);
+
+    try {
+        ArrayList<Integer> numbers = new ArrayList<>();
+        Scanner scanner = new Scanner(System.in);
+
+        while(numbers.size() <5 ) {
+            System.out.println("Please enter a digit.");
+            int choice = scanner.nextInt();
+            numbers.add(choice);
+        }
+        int maxNumber =  Collections.max(numbers);
+        System.out.println(maxNumber);
+    }
+    // Always keep specific exception at the top
+    catch (InputMismatchException e){
+        System.out.println("Please check your input, it may be not of type Integer");
+    }
+    // Always keep generic exception at the end
+    catch (Exception e) {
+        System.out.println("--- EXCEPTION DETAILS ---");
+        System.out.println("Exception Type: " + e.getClass().getName());
+        System.out.println("Message: " + e.getMessage());
+        System.out.println("\nFull Stack Trace:");
+        e.printStackTrace();
+        System.out.println("-------------------------");
+    }*/
+
+
+    // Take user input to add 2 numbers and raise the
+    // appropriate exceptions if there is an issue with the input.
+
+    try {
+        System.out.println("Please enter a number king.");
+        Scanner scanner = new Scanner(System.in);
+        int choice1 = scanner.nextInt();
+        System.out.println("Please enter a number king.");
+        int choice2 = scanner.nextInt();
+        int result = choice1 + choice2;
+        System.out.println("The result of the addition of the 2 numbers is = " + result);
+    } catch (InputMismatchException e) {
+        System.out.println("Check your input, it should be an integer.");
+    } catch (Exception e){
+        System.out.println("Error message: " + e.getClass() + e.getMessage());
+        }
+        }
 
 
 
