@@ -165,8 +165,8 @@ public static void main (String [] args ) {
         System.out.println("Check your input, it should be an integer.");
     } catch (Exception e){
         System.out.println("Error message: " + e.getClass() + e.getMessage());
-        }
-        }
+    }
+}
 
 
 
